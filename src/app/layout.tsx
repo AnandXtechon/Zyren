@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import { Suspense } from "react"
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
   },
   description:
     "Transform your business with intelligent AI automation tools. We design, develop, and implement smart solutions that help you work smarter, not harder. Expert AI development, seamless integration, and continuous optimization.",
+  
   keywords: [
     "AI automation",
     "artificial intelligence",
@@ -61,6 +63,7 @@ export const metadata: Metadata = {
     title: "Zyren - AI Automation & Smart Solutions",
     description:
       "Transform your business with intelligent AI automation tools. Expert AI development, seamless integration, and continuous optimization.",
+      
     images: [
       {
         url: "/images/og-image.jpg",
@@ -101,7 +104,7 @@ export const metadata: Metadata = {
     telephone: false,
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "Z7kA9w3viKL5ACe_XZXmI_5ARc2bH_CSztbJAKUKj6c",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
@@ -213,20 +216,14 @@ export default function RootLayout({
         <Analytics />
 
         {/* Performance monitoring script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLB64KSVE6" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              // Performance monitoring
-              if ('performance' in window) {
-                window.addEventListener('load', function() {
-                  setTimeout(function() {
-                    const perfData = performance.getEntriesByType('navigation')[0];
-                    if (perfData) {
-                      console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart);
-                    }
-                  }, 0);
-                });
-              }
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CLB64KSVE6');
             `,
           }}
         />
