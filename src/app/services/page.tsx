@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: "https://zyren-roan.vercel.app/services",
     images: [
       {
-        url: "https://zyren-roan.vercel.app/images/services-og.jpg",
+        url: "https://zyren-roan.vercel.app/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Zyren AI Automation Services",
@@ -67,7 +67,7 @@ export default function Services() {
           <div className="bg-zinc-900/50 border border-gray-800 rounded-xl p-6 backdrop-blur-sm h-[400px] flex items-center justify-center">
             <Image
               className="rounded-xl object-cover"
-              src="/placeholder.svg?height=400&width=500"
+              src="/images/dashboard.jpg"
               alt="Workflow Automation Dashboard"
               width={500}
               height={400}
@@ -130,7 +130,7 @@ export default function Services() {
           <div className="bg-zinc-900/50 border border-gray-800 rounded-xl p-6 backdrop-blur-sm h-[400px] flex items-center justify-center">
             <Image
               className="rounded-xl object-cover"
-              src="/placeholder.svg?height=400&width=500"
+              src="/images/dashboard.jpg"
               alt="AI Assistant Interface"
               width={500}
               height={400}
@@ -146,7 +146,7 @@ export default function Services() {
           <div className="bg-zinc-900/50 border border-gray-800 rounded-xl p-6 backdrop-blur-sm h-[400px] flex items-center justify-center">
             <Image
               className="rounded-xl object-cover"
-              src="/placeholder.svg?height=400&width=500"
+              src="/images/dashboard.jpg"
               alt="Sales & Marketing Automation"
               width={500}
               height={400}
@@ -212,7 +212,7 @@ export default function Services() {
           <div className="bg-zinc-900/50 border border-gray-800 rounded-xl p-6 backdrop-blur-sm h-[400px] flex items-center justify-center">
             <Image
               className="rounded-xl object-cover"
-              src="/placeholder.svg?height=400&width=500"
+              src="/images/dashboard.jpg"
               alt="Custom AI Development"
               width={500}
               height={400}

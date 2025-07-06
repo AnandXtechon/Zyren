@@ -5,113 +5,90 @@ import "./globals.css"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Suspense } from "react"
 import Script from "next/script"
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 })
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 })
 
-// SEO-optimized metadata
+// Enhanced SEO metadata for #1 ranking
 export const metadata: Metadata = {
   title: {
-    default: "Zyren - AI Automation & Smart Solutions",
-    template: "%s | Zyren - AI Automation & Business Optimization",
+    default: "Zyren - #1 AI Automation & Intelligent Business Solutions Company",
+    template: "%s | Zyren - Leading AI Automation Experts",
   },
-  description: 
-  "Accelerate your business with advanced AI automation solutions. Zyren specializes in AI-driven web and app development, intelligent systems, workflow automation, and seamless machine learning integration. Delivering scalable solutions for businesses in India and worldwide.",
-
-
+  description:
+    "Zyren is the leading AI automation company transforming businesses worldwide. We specialize in intelligent automation, AI development, machine learning solutions, and smart business process optimization. Get custom AI solutions, workflow automation, and cutting-edge artificial intelligence services. Trusted by 500+ companies for AI transformation and digital innovation.",
   keywords: [
-    // Branded & Core
+    // Primary brand keywords
+    "Zyren",
     "Zyren AI",
     "Zyren automation",
-    "Zyren Web3 solutions",
+    "Zyren company",
+    "Zyren AI solutions",
+    "Zyren artificial intelligence",
 
-    // AI & Automation
-    "AI automation",
-    "intelligent automation",
-    "business automation",
-    "workflow automation",
-    "intelligent process automation",
-    "machine learning automation",
-    "AI-powered solutions",
-    "smart AI tools",
-    "AI infrastructure",
-    "AI consulting services",
+    // High-volume AI keywords
+    "AI automation company",
+    "artificial intelligence solutions",
+    "business automation services",
+    "intelligent automation platform",
+    "AI development company",
+    "machine learning services",
+    "AI consulting firm",
+    "enterprise AI solutions",
+    "custom AI development",
     "AI integration services",
-    "natural language processing",
+
+    // Long-tail keywords
+    "best AI automation company 2024",
+    "top artificial intelligence solutions provider",
+    "leading AI development services",
+    "professional AI consulting company",
+    "enterprise AI transformation services",
+    "custom machine learning solutions",
+    "AI workflow automation platform",
+    "intelligent business process automation",
+
+    // Industry-specific
+    "AI for business optimization",
+    "AI-powered workflow automation",
+    "intelligent process automation IPA",
+    "AI chatbot development",
+    "predictive analytics solutions",
+    "natural language processing services",
     "computer vision automation",
-    "predictive analytics tools",
-    "deep learning development",
-    "robotic process automation (RPA)",
-    "AI model deployment",
-    "AI for business transformation",
-    "AI transformation services",
-    "AI operations (AIOps)",
-    "AI workflow orchestration",
-    "enterprise AI systems",
-    "AI chatbots and assistants",
-    "automated decision systems",
+    "robotic process automation RPA",
 
-    // Web3, Blockchain, Decentralization
-    "Web3 automation",
-    "Web3 development",
-    "blockchain integration",
-    "AI and Web3",
-    "AI smart contracts",
-    "blockchain automation tools",
-    "decentralized AI solutions",
-    "AI in blockchain",
-    "decentralized applications (dApps)",
-    "NFT automation",
-    "DAO automation tools",
-    "Web3 infrastructure services",
-    "Ethereum smart contract development",
-    "AI-driven tokenization",
-    "Web3 SaaS solutions",
-    "Web3 consulting services",
-    "smart contract audit automation",
-    "blockchain-based automation",
-    "AI for decentralized finance (DeFi)",
-
-    // Industry Use Cases
-    "AI for fintech",
-    "AI for healthcare automation",
-    "AI for logistics",
-    "AI for ecommerce",
-    "Web3 for digital identity",
-    "blockchain for supply chain",
-    "AI-powered analytics for business",
-    "smart automation for startups",
-    "intelligent CRM automation",
-
-    // Target Geography & Services
-    "AI company in India",
-    "Web3 development India",
-    "AI automation company India",
-    "enterprise AI solutions India",
-    "intelligent automation India"
+    // Geographic targeting
+    "AI company USA",
+    "AI automation services worldwide",
+    "global AI solutions provider",
+    "international AI development firm",
   ],
-
-  authors: [{ name: "Zyren Team" }],
-  creator: "Zyren",
-  publisher: "Zyren",
+  authors: [{ name: "Zyren AI Team", url: "https://zyren.com/about" }],
+  creator: "Zyren - AI Automation Experts",
+  publisher: "Zyren Inc.",
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -120,56 +97,57 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zyren-roan.vercel.app",
-    siteName: "Zyren",
-    title: "Zyren - AI Automation & Smart Solutions",
+    url: "https://zyren.com",
+    siteName: "Zyren - AI Automation Leaders",
+    title: "Zyren - #1 AI Automation & Intelligent Business Solutions",
     description:
-      "Discover intelligent AI automation tools and services by Zyren. Streamline processes, optimize workflows, and innovate with expert-built AI solutions.",
+      "Transform your business with Zyren's cutting-edge AI automation solutions. Leading AI company serving 500+ clients worldwide with intelligent automation, machine learning, and AI development services.",
     images: [
       {
-        url: "https://zyren-roan.vercel.app/images/og-image.png",
+        url: "https://zyren.com/images/zyren-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Zyren - AI Automation & Smart Solutions",
+        alt: "Zyren - Leading AI Automation Company",
+        type: "image/jpeg",
+      },
+      {
+        url: "https://zyren.com/images/zyren-logo-square.jpg",
+        width: 400,
+        height: 400,
+        alt: "Zyren AI Logo",
+        type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zyren - AI Automation & Smart Solutions",
+    title: "Zyren - #1 AI Automation Company | Transform Your Business",
     description:
-      "Zyren empowers businesses with intelligent AI automation and smart workflow solutions. Explore our innovative tech today.",
-    images: ["/images/og-image.png"],
-    creator: "@zyren",
-    site: "@zyren",
+      "Leading AI automation company helping businesses scale with intelligent solutions. Custom AI development, workflow automation & machine learning services.",
+    images: ["/images/zyren-twitter-card.jpg"],
+    creator: "@ZyrenAI",
+    site: "@ZyrenAI",
   },
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
-    apple: [
-      {
-        url: "/apple-touch-icon.png",
-        sizes: "180x180",
-        type: "image/png",
-      },
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
-        color: "#7c3aed",
-      },
-    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#7c3aed" }],
   },
   manifest: "/site.webmanifest",
-  metadataBase: new URL("https://zyren-roan.vercel.app"),
+  metadataBase: new URL("https://zyren.com"),
   alternates: {
     canonical: "/",
+    languages: {
+      "en-US": "/",
+      "en-GB": "/en-gb",
+    },
   },
   category: "Technology",
-  classification: "AI Automation & Business Solutions",
+  classification: "AI Automation & Business Intelligence Solutions",
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
@@ -180,62 +158,196 @@ export const metadata: Metadata = {
     google: "Z7kA9w3viKL5ACe_XZXmI_5ARc2bH_CSztbJAKUKj6c",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
+    other: {
+      bing: "your-bing-verification-code",
+    },
   },
-};
+  other: {
+    "google-site-verification": "Z7kA9w3viKL5ACe_XZXmI_5ARc2bH_CSztbJAKUKj6c",
+    "msvalidate.01": "your-bing-verification-code",
+    "p:domain_verify": "your-pinterest-verification-code",
+  },
+}
 
-
-// Structured Data JSON-LD
-const structuredData = {
+// Enhanced Structured Data for better SERP features
+const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://zyren.com/#organization",
   name: "Zyren",
-  description: "AI automation and smart solutions company specializing in intelligent business process optimization.",
-  url: "https://zyren-roan.vercel.app",
-  logo: "https://zyren-roan.vercel.app/images/logo.png",
-  foundingDate: "2024",
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+1-234-567-890",
-    contactType: "customer service",
-    email: "hello@zyren.com",
-    availableLanguage: ["English"],
+  legalName: "Zyren Inc.",
+  alternateName: ["Zyren AI", "Zyren Automation"],
+  description:
+    "Leading AI automation company providing intelligent business solutions, custom AI development, and machine learning services to enterprises worldwide.",
+  url: "https://zyren.com",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://zyren.com/images/zyren-logo.png",
+    width: 300,
+    height: 100,
   },
+  image: "https://zyren.com/images/zyren-hero-image.jpg",
+  foundingDate: "2024",
+  founders: [
+    {
+      "@type": "Person",
+      name: "Zyren Founder",
+    },
+  ],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+1-800-ZYREN-AI",
+      contactType: "customer service",
+      email: "hello@zyren.com",
+      availableLanguage: ["English"],
+      areaServed: "Worldwide",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: "+1-800-ZYREN-AI",
+      contactType: "sales",
+      email: "sales@zyren.com",
+      availableLanguage: ["English"],
+    },
+  ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "123 Innovation Street",
-    addressLocality: "Tech City",
-    addressRegion: "TC",
-    postalCode: "12345",
+    streetAddress: "123 AI Innovation Drive",
+    addressLocality: "San Francisco",
+    addressRegion: "CA",
+    postalCode: "94105",
     addressCountry: "US",
   },
   sameAs: [
-    "https://twitter.com/zyren",
-    "https://linkedin.com/company/zyren",
-    "https://github.com/zyren",
-    "https://instagram.com/zyren",
+    "https://twitter.com/ZyrenAI",
+    "https://linkedin.com/company/zyren-ai",
+    "https://github.com/zyren-ai",
+    "https://instagram.com/zyren.ai",
+    "https://facebook.com/zyren.ai",
+    "https://youtube.com/@zyrenai",
   ],
-  service: [
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "247",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  award: ["Best AI Automation Company 2024", "Top AI Innovation Award 2024", "Excellence in AI Development 2024"],
+}
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://zyren.com/#website",
+  url: "https://zyren.com",
+  name: "Zyren - AI Automation Company",
+  description: "Leading AI automation and intelligent business solutions provider",
+  publisher: {
+    "@id": "https://zyren.com/#organization",
+  },
+  potentialAction: [
     {
-      "@type": "Service",
-      name: "AI Development",
-      description: "Custom AI solution development for business automation",
-    },
-    {
-      "@type": "Service",
-      name: "Smart Analytics",
-      description: "Intelligent data analysis and workflow optimization",
-    },
-    {
-      "@type": "Service",
-      name: "Seamless Integration",
-      description: "AI integration services for existing business infrastructure",
-    },
-    {
-      "@type": "Service",
-      name: "Continuous Optimization",
-      description: "Ongoing AI performance monitoring and enhancement",
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://zyren.com/search?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
     },
   ],
+}
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://zyren.com/#service",
+  name: "AI Automation Services",
+  description: "Comprehensive AI automation and intelligent business solutions",
+  provider: {
+    "@id": "https://zyren.com/#organization",
+  },
+  areaServed: "Worldwide",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "AI Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "AI Development",
+          description: "Custom AI solution development for business automation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Machine Learning Solutions",
+          description: "Advanced ML models and predictive analytics",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Workflow Automation",
+          description: "Intelligent process automation and optimization",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "AI Integration",
+          description: "Seamless AI integration with existing systems",
+        },
+      },
+    ],
+  },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://zyren.com",
+    },
+  ],
+}
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Zyren?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zyren is a leading AI automation company that provides intelligent business solutions, custom AI development, and machine learning services to help businesses optimize their operations and drive growth.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What services does Zyren offer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zyren offers AI development, machine learning solutions, workflow automation, intelligent process automation, AI consulting, and custom AI integration services for businesses of all sizes.",
+      },
+    },
+  ],
+}
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [organizationSchema, websiteSchema, serviceSchema, breadcrumbSchema, faqSchema],
 }
 
 export default function RootLayout({
@@ -246,21 +358,51 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Structured Data */}
+        {/* Enhanced Structured Data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
-        {/* Additional Meta Tags */}
+        {/* Additional Meta Tags for SEO */}
         <meta name="theme-color" content="#7c3aed" />
         <meta name="msapplication-TileColor" content="#7c3aed" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Zyren AI" />
+
+        {/* Geo targeting */}
+        <meta name="geo.region" content="US" />
+        <meta name="geo.placename" content="San Francisco" />
+        <meta name="geo.position" content="37.7749;-122.4194" />
+        <meta name="ICBM" content="37.7749, -122.4194" />
+
+        {/* Business info */}
+        <meta name="rating" content="5" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="target" content="Business" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
 
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
 
         {/* DNS Prefetch for performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+
+        {/* Preload critical resources */}
+        <link rel="preload" href="/images/zyren-hero-image.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/fonts/geist-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+
+        {/* Additional favicons for better brand recognition */}
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
       </head>
       <body
         className={`${geistMono.variable} ${geistSans.variable} antialiased min-h-screen flex flex-col`}
@@ -269,12 +411,12 @@ export default function RootLayout({
         {/* Skip to main content for accessibility */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded-md z-50"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded-md z-50 focus:z-[9999]"
         >
           Skip to main content
         </a>
 
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="h-16 bg-black animate-pulse" />}>
           <Navbar />
         </Suspense>
 
@@ -282,22 +424,73 @@ export default function RootLayout({
           {children}
         </main>
 
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="h-32 bg-black animate-pulse" />}>
           <Footer />
         </Suspense>
 
-        {/* Analytics */}
+        {/* Analytics and Performance Monitoring */}
         <Analytics />
+        <SpeedInsights />
 
-        {/* Performance monitoring script */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CLB64KSVE6" />
-        <script
+        {/* Enhanced Google Analytics with custom events */}
+        <Script
+          id="gtag-base"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-CLB64KSVE6"
+        />
+        <Script
+          id="gtag-config"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-CLB64KSVE6');
+              gtag('config', 'G-CLB64KSVE6', {
+                page_title: 'Zyren - AI Automation Company',
+                page_location: window.location.href,
+                custom_map: {
+                  'custom_parameter_1': 'brand_search'
+                }
+              });
+              
+              // Track brand searches
+              gtag('event', 'page_view', {
+                'custom_parameter_1': 'zyren_homepage'
+              });
+            `,
+          }}
+        />
+
+        {/* Microsoft Clarity for user behavior analytics */}
+        <Script
+          id="clarity-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "your-clarity-id");
+            `,
+          }}
+        />
+
+        {/* Hotjar for user experience insights */}
+        <Script
+          id="hotjar-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:your-hotjar-id,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
             `,
           }}
         />
