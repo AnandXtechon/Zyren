@@ -9,7 +9,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Zyren - #1 AI Automation Company | Transform Your Business with AI",
   description:
-    "Zyren is the world's leading AI automation company. We help businesses transform with intelligent automation, custom AI development, and machine learning solutions. Trusted by 500+ companies worldwide. Get started with AI today!",
+    "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
   keywords: [
     "Zyren",
     "Zyren AI automation",

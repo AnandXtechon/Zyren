@@ -41,7 +41,7 @@ export default function SchemaMarkup({ type, data }: SchemaMarkupProps) {
           "@context": "https://schema.org",
           "@type": "Service",
           name: serviceData.name,
-          description: data.description,
+          description: serviceData.description,
           provider: {
             "@type": "Organization",
             name: "Zyren",

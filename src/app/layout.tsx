@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     "global AI solutions provider",
     "international AI development firm",
   ],
-  authors: [{ name: "Zyren AI Team", url: "https://zyren.com/about" }],
+  authors: [{ name: "Zyren AI Team", url: "https://zyren-roan.vercel.app/about" }],
   creator: "Zyren - AI Automation Experts",
   publisher: "Zyren Inc.",
   robots: {
@@ -97,21 +97,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zyren.com",
+    url: "https://zyren-roan.vercel.app",
     siteName: "Zyren - AI Automation Leaders",
     title: "Zyren - #1 AI Automation & Intelligent Business Solutions",
     description:
       "Transform your business with Zyren's cutting-edge AI automation solutions. Leading AI company serving 500+ clients worldwide with intelligent automation, machine learning, and AI development services.",
     images: [
       {
-        url: "https://zyren.com/images/zyren-og-image.jpg",
+        url: "https://zyren-roan.vercel.app/images/zyren-og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Zyren - Leading AI Automation Company",
         type: "image/jpeg",
       },
       {
-        url: "https://zyren.com/images/zyren-logo-square.jpg",
+        url: "https://zyren-roan.vercel.app/images/zyren-logo-square.jpg",
         width: 400,
         height: 400,
         alt: "Zyren AI Logo",
@@ -138,7 +138,7 @@ export const metadata: Metadata = {
     other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#7c3aed" }],
   },
   manifest: "/site.webmanifest",
-  metadataBase: new URL("https://zyren.com"),
+  metadataBase: new URL("https://zyren-roan.vercel.app"),
   alternates: {
     canonical: "/",
     languages: {
@@ -173,20 +173,20 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://zyren.com/#organization",
+  "@id": "https://zyren-roan.vercel.app/#organization",
   name: "Zyren",
   legalName: "Zyren Inc.",
   alternateName: ["Zyren AI", "Zyren Automation"],
   description:
     "Leading AI automation company providing intelligent business solutions, custom AI development, and machine learning services to enterprises worldwide.",
-  url: "https://zyren.com",
+  url: "https://zyren-roan.vercel.app",
   logo: {
     "@type": "ImageObject",
-    url: "https://zyren.com/images/zyren-logo.png",
+    url: "https://zyren-roan.vercel.app/images/zyren-logo.png",
     width: 300,
     height: 100,
   },
-  image: "https://zyren.com/images/zyren-hero-image.jpg",
+  image: "https://zyren-roan.vercel.app/images/zyren-hero-image.jpg",
   foundingDate: "2024",
   founders: [
     {
@@ -199,7 +199,7 @@ const organizationSchema = {
       "@type": "ContactPoint",
       telephone: "+1-800-ZYREN-AI",
       contactType: "customer service",
-      email: "hello@zyren.com",
+      email: "hello@zyren-roan.vercel.app",
       availableLanguage: ["English"],
       areaServed: "Worldwide",
     },
@@ -207,7 +207,7 @@ const organizationSchema = {
       "@type": "ContactPoint",
       telephone: "+1-800-ZYREN-AI",
       contactType: "sales",
-      email: "sales@zyren.com",
+      email: "sales@zyren-roan.vercel.app",
       availableLanguage: ["English"],
     },
   ],
@@ -240,19 +240,19 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://zyren.com/#website",
-  url: "https://zyren.com",
+  "@id": "https://zyren-roan.vercel.app/#website",
+  url: "https://zyren-roan.vercel.app",
   name: "Zyren - AI Automation Company",
   description: "Leading AI automation and intelligent business solutions provider",
   publisher: {
-    "@id": "https://zyren.com/#organization",
+    "@id": "https://zyren-roan.vercel.app/#organization",
   },
   potentialAction: [
     {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://zyren.com/search?q={search_term_string}",
+        urlTemplate: "https://zyren-roan.vercel.app/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -262,11 +262,11 @@ const websiteSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://zyren.com/#service",
+  "@id": "https://zyren-roan.vercel.app/#service",
   name: "AI Automation Services",
   description: "Comprehensive AI automation and intelligent business solutions",
   provider: {
-    "@id": "https://zyren.com/#organization",
+    "@id": "https://zyren-roan.vercel.app/#organization",
   },
   areaServed: "Worldwide",
   hasOfferCatalog: {
@@ -317,7 +317,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://zyren.com",
+      item: "https://zyren-roan.vercel.app",
     },
   ],
 }
