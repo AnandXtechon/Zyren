@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
   keywords: [
     "Zyren",
+    "Zyren AI",
     "Zyren AI automation",
     "best AI company",
     "AI automation services",

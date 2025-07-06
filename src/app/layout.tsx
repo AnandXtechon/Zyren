@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | Zyren - Leading AI Automation Experts",
   },
   description:
-    "Zyren is the leading AI automation company transforming businesses worldwide. We specialize in intelligent automation, AI development, machine learning solutions, and smart business process optimization. Get custom AI solutions, workflow automation, and cutting-edge artificial intelligence services. Trusted by 500+ companies for AI transformation and digital innovation.",
+    "Zyren is the leading AI automation company transforming businesses worldwide. AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
   keywords: [
     // Primary brand keywords
     "Zyren",
@@ -101,17 +101,17 @@ export const metadata: Metadata = {
     siteName: "Zyren - AI Automation Leaders",
     title: "Zyren - #1 AI Automation & Intelligent Business Solutions",
     description:
-      "Transform your business with Zyren's cutting-edge AI automation solutions. Leading AI company serving 500+ clients worldwide with intelligent automation, machine learning, and AI development services.",
+      "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
     images: [
       {
-        url: "https://zyren-roan.vercel.app/images/zyren-og-image.jpg",
+        url: "https://zyren-roan.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Zyren - Leading AI Automation Company",
         type: "image/jpeg",
       },
       {
-        url: "https://zyren-roan.vercel.app/images/zyren-logo-square.jpg",
+        url: "https://zyren-roan.vercel.app/images/logo.png",
         width: 400,
         height: 400,
         alt: "Zyren AI Logo",
@@ -123,7 +123,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zyren - #1 AI Automation Company | Transform Your Business",
     description:
-      "Leading AI automation company helping businesses scale with intelligent solutions. Custom AI development, workflow automation & machine learning services.",
+      "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
     images: ["/images/zyren-twitter-card.jpg"],
     creator: "@ZyrenAI",
     site: "@ZyrenAI",
@@ -178,11 +178,11 @@ const organizationSchema = {
   legalName: "Zyren Inc.",
   alternateName: ["Zyren AI", "Zyren Automation"],
   description:
-    "Leading AI automation company providing intelligent business solutions, custom AI development, and machine learning services to enterprises worldwide.",
+    "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
   url: "https://zyren-roan.vercel.app",
   logo: {
     "@type": "ImageObject",
-    url: "https://zyren-roan.vercel.app/images/zyren-logo.png",
+    url: "https://zyren-roan.vercel.app/images/zyren-.png",
     width: 300,
     height: 100,
   },
