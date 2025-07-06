@@ -126,7 +126,7 @@ export const metadata: Metadata = {
       "Discover intelligent AI automation tools and services by Zyren. Streamline processes, optimize workflows, and innovate with expert-built AI solutions.",
     images: [
       {
-        url: "https://zyren-roan.vercel.app/images/logo.png",
+        url: "https://zyren-roan.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Zyren - AI Automation & Smart Solutions",
@@ -138,7 +138,7 @@ export const metadata: Metadata = {
     title: "Zyren - AI Automation & Smart Solutions",
     description:
       "Zyren empowers businesses with intelligent AI automation and smart workflow solutions. Explore our innovative tech today.",
-    images: ["/images/twitter-image.jpg"],
+    images: ["/images/og-image.png"],
     creator: "@zyren",
     site: "@zyren",
   },
