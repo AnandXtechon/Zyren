@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     title: "Zyren - #1 AI Automation Company | Transform Your Business",
     description:
       "Leading AI automation company helping 500+ businesses worldwide. Custom AI solutions, intelligent automation, and machine learning services.",
-    url: "https://zyren.com",
+    url: "https://zyren-roan.vercel.app",
     images: [
       {
-        url: "https://zyren.com/images/zyren-homepage-og.jpg",
+        url: "https://zyren-roan.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Zyren AI Automation Company Homepage",
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
   twitter: {
     title: "Zyren - #1 AI Automation Company",
     description: "Transform your business with Zyren's AI automation solutions. Trusted by 500+ companies worldwide.",
-    images: ["/images/zyren-twitter-homepage.jpg"],
+    images: ["/images/og-image.png"],
   },
   alternates: {
-    canonical: "https://zyren.com",
+    canonical: "https://zyren-roan.vercel.app",
   },
 }
 
