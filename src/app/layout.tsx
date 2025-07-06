@@ -29,20 +29,79 @@ export const metadata: Metadata = {
   },
   description:
     "Accelerate your business with cutting-edge AI automation solutions. Zyren specializes in intelligent systems, workflow automation, and seamless AI integration to help you scale smarter and work more efficiently.",
-  
+
   keywords: [
+    // Branded & Core
+    "Zyren AI",
+    "Zyren automation",
+    "Zyren Web3 solutions",
+
+    // AI & Automation
     "AI automation",
-    "artificial intelligence",
+    "intelligent automation",
     "business automation",
     "workflow automation",
-    "smart AI solutions",
-    "AI development services",
-    "AI-powered tools",
-    "process optimization",
-    "intelligent automation systems",
-    "machine learning integration",
-    "zyren india"
+    "intelligent process automation",
+    "machine learning automation",
+    "AI-powered solutions",
+    "smart AI tools",
+    "AI infrastructure",
+    "AI consulting services",
+    "AI integration services",
+    "natural language processing",
+    "computer vision automation",
+    "predictive analytics tools",
+    "deep learning development",
+    "robotic process automation (RPA)",
+    "AI model deployment",
+    "AI for business transformation",
+    "AI transformation services",
+    "AI operations (AIOps)",
+    "AI workflow orchestration",
+    "enterprise AI systems",
+    "AI chatbots and assistants",
+    "automated decision systems",
+
+    // Web3, Blockchain, Decentralization
+    "Web3 automation",
+    "Web3 development",
+    "blockchain integration",
+    "AI and Web3",
+    "AI smart contracts",
+    "blockchain automation tools",
+    "decentralized AI solutions",
+    "AI in blockchain",
+    "decentralized applications (dApps)",
+    "NFT automation",
+    "DAO automation tools",
+    "Web3 infrastructure services",
+    "Ethereum smart contract development",
+    "AI-driven tokenization",
+    "Web3 SaaS solutions",
+    "Web3 consulting services",
+    "smart contract audit automation",
+    "blockchain-based automation",
+    "AI for decentralized finance (DeFi)",
+
+    // Industry Use Cases
+    "AI for fintech",
+    "AI for healthcare automation",
+    "AI for logistics",
+    "AI for ecommerce",
+    "Web3 for digital identity",
+    "blockchain for supply chain",
+    "AI-powered analytics for business",
+    "smart automation for startups",
+    "intelligent CRM automation",
+
+    // Target Geography & Services
+    "AI company in India",
+    "Web3 development India",
+    "AI automation company India",
+    "enterprise AI solutions India",
+    "intelligent automation India"
   ],
+
   authors: [{ name: "Zyren Team" }],
   creator: "Zyren",
   publisher: "Zyren",
@@ -67,7 +126,7 @@ export const metadata: Metadata = {
       "Discover intelligent AI automation tools and services by Zyren. Streamline processes, optimize workflows, and innovate with expert-built AI solutions.",
     images: [
       {
-        url: "/images/logo.png",
+        url: "https://zyren-roan.vercel.app/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Zyren - AI Automation & Smart Solutions",
