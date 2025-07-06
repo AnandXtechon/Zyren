@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     "process optimization",
     "intelligent automation systems",
     "machine learning integration",
+    "zyren india"
   ],
   authors: [{ name: "Zyren Team" }],
   creator: "Zyren",
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
       "Discover intelligent AI automation tools and services by Zyren. Streamline processes, optimize workflows, and innovate with expert-built AI solutions.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Zyren - AI Automation & Smart Solutions",
