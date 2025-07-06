@@ -25,9 +25,9 @@ const ServiceSection = () => {
 
             {/* Header section */}
             <div className="flex flex-col items-center justify-center max-w-4xl mt-6 mb-16 relative z-10">
-                <h1 className="text-4xl md:text-5xl font-bold text-white text-center leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-white text-center leading-tight">
                     AI Solutions That Take Your Business to the Next Level
-                </h1>
+                </h2>
                 <p className="text-gray-400 text-lg mt-6 text-center max-w-2xl">
                     We design, develop, and implement automation tools that help you work smarter, not harder
                 </p>

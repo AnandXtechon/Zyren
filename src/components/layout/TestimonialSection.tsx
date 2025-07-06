@@ -11,9 +11,9 @@ const TestimonialSection = () => {
 
             {/* Header section */}
             <div className="flex flex-col items-center justify-center max-w-4xl mt-6 mb-16 relative z-10">
-                <h1 className="text-4xl md:text-5xl font-bold text-white text-center leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-white text-center leading-tight">
                     Why Businesses Love <br /> Our AI Solutions
-                </h1>
+                </h2>
                 <p className="text-gray-400 text-lg mt-6 text-center max-w-2xl">
                     Real businesses, real results with AI automation.
                 </p>

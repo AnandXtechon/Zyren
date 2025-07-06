@@ -40,9 +40,9 @@ const ProcessSection = () => {
 
       {/* Header section */}
       <header className="flex flex-col items-center justify-center max-w-4xl mb-16 relative z-10">
-        <h1 id="process-heading" className="text-4xl md:text-5xl font-bold text-white text-center leading-tight mb-6">
+        <h2 id="process-heading" className="text-4xl md:text-5xl font-bold text-white text-center leading-tight mb-6">
           Our Simple, Smart, and Scalable Process
-        </h1>
+        </h2>
         <p className="text-gray-400 text-lg text-center max-w-2xl">
           We design, develop, and implement automation tools that help you work smarter, not harder
         </p>
