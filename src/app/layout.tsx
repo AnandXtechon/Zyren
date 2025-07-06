@@ -27,8 +27,9 @@ export const metadata: Metadata = {
     default: "Zyren - AI Automation & Smart Solutions",
     template: "%s | Zyren - AI Automation & Business Optimization",
   },
-  description:
-    "Accelerate your business with cutting-edge AI automation solutions. Zyren specializes in intelligent systems, workflow automation, and seamless AI integration to help you scale smarter and work more efficiently.",
+  description: 
+  "Accelerate your business with advanced AI automation solutions. Zyren specializes in AI-driven web and app development, intelligent systems, workflow automation, and seamless machine learning integration. Delivering scalable solutions for businesses in India and worldwide.",
+
 
   keywords: [
     // Branded & Core
