@@ -1,0 +1,49 @@
+# Robots.txt for Zyren - AI Automation & Smart Solutions
+# https://zyren-roan.vercel.app
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /register/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /account/
+Disallow: /profile/
+
+# Allow important directories
+Allow: /images/
+Allow: /icons/
+Allow: /favicon.ico
+Allow: /sitemap.xml
+
+# Crawl delay (optional - be respectful to server resources)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://zyren-roan.vercel.app/sitemap.xml
+
+# Google-specific directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing-specific directives  
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block common spam bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
