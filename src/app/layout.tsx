@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import { Analytics } from "@vercel/analytics/react"
 import { Suspense } from "react"
+import Script from "next/script"
 
 
 const geistSans = Geist({
@@ -24,22 +25,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Zyren - AI Automation & Smart Solutions",
-    template: "%s | Zyren - AI Automation Solutions",
+    template: "%s | Zyren - AI Automation & Business Optimization",
   },
   description:
-    "Transform your business with intelligent AI automation tools. We design, develop, and implement smart solutions that help you work smarter, not harder. Expert AI development, seamless integration, and continuous optimization.",
+    "Accelerate your business with cutting-edge AI automation solutions. Zyren specializes in intelligent systems, workflow automation, and seamless AI integration to help you scale smarter and work more efficiently.",
   
   keywords: [
     "AI automation",
     "artificial intelligence",
     "business automation",
-    "smart solutions",
-    "AI development",
-    "workflow optimization",
-    "intelligent systems",
-    "automation tools",
-    "AI integration",
-    "process automation",
+    "workflow automation",
+    "smart AI solutions",
+    "AI development services",
+    "AI-powered tools",
+    "process optimization",
+    "intelligent automation systems",
+    "machine learning integration",
   ],
   authors: [{ name: "Zyren Team" }],
   creator: "Zyren",
@@ -58,18 +59,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zyren.com",
+    url: "https://zyren-roan.vercel.app",
     siteName: "Zyren",
     title: "Zyren - AI Automation & Smart Solutions",
     description:
-      "Transform your business with intelligent AI automation tools. Expert AI development, seamless integration, and continuous optimization.",
-      
+      "Discover intelligent AI automation tools and services by Zyren. Streamline processes, optimize workflows, and innovate with expert-built AI solutions.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Zyren - AI Automation Solutions",
+        alt: "Zyren - AI Automation & Smart Solutions",
       },
     ],
   },
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zyren - AI Automation & Smart Solutions",
     description:
-      "Transform your business with intelligent AI automation tools. Expert AI development and smart solutions.",
+      "Zyren empowers businesses with intelligent AI automation and smart workflow solutions. Explore our innovative tech today.",
     images: ["/images/twitter-image.jpg"],
     creator: "@zyren",
     site: "@zyren",
@@ -87,16 +87,28 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
-    other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#7c3aed" }],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/safari-pinned-tab.svg",
+        color: "#7c3aed",
+      },
+    ],
   },
   manifest: "/site.webmanifest",
-  metadataBase: new URL("https://zyren.com"),
+  metadataBase: new URL("https://zyren-roan.vercel.app"),
   alternates: {
     canonical: "/",
   },
-  category: "technology",
-  classification: "AI Automation Services",
+  category: "Technology",
+  classification: "AI Automation & Business Solutions",
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
@@ -108,7 +120,8 @@ export const metadata: Metadata = {
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
-}
+};
+
 
 // Structured Data JSON-LD
 const structuredData = {
@@ -116,8 +129,8 @@ const structuredData = {
   "@type": "Organization",
   name: "Zyren",
   description: "AI automation and smart solutions company specializing in intelligent business process optimization.",
-  url: "https://zyren.com",
-  logo: "https://zyren.com/images/logo.png",
+  url: "https://zyren-roan.vercel.app",
+  logo: "https://zyren-roan.vercel.app/images/logo.png",
   foundingDate: "2024",
   contactPoint: {
     "@type": "ContactPoint",
@@ -216,7 +229,7 @@ export default function RootLayout({
         <Analytics />
 
         {/* Performance monitoring script */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLB64KSVE6" />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CLB64KSVE6" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
