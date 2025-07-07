@@ -26,7 +26,7 @@ const geistMono = Geist_Mono({
 // Enhanced SEO metadata for #1 ranking
 export const metadata: Metadata = {
   title: {
-    default: "Zyren - #1 AI Automation & Intelligent Business Solutions Company",
+    default: "Zyren - AI Automation & Smart Solutions",
     template: "%s | Zyren - Leading AI Automation Experts",
   },
   description:
@@ -98,8 +98,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://zyren-roan.vercel.app",
-    siteName: "Zyren - AI Automation Leaders",
-    title: "Zyren - #1 AI Automation & Intelligent Business Solutions",
+    siteName: "Zyren - AI Automation & Smart Solutions",
+    title: "Zyren - AI Automation & Intelligent Business Solutions",
     description:
       "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
     images: [
@@ -121,7 +121,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zyren - AI Automation Company",
+    title: "Zyren - AI Automation & Smart Solutions",
     description:
       "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
     images: ["/images/zyren-twitter-card.jpg"],
@@ -220,9 +220,9 @@ const organizationSchema = {
     addressCountry: "US",
   },
   sameAs: [
-    "https://twitter.com/ZyrenAI",
+    "https://twitter.com/Zyren",
     "https://linkedin.com/company/zyren-ai",
-    "https://github.com/zyren-ai",
+    "https://github.com/AnandXtechon/zyren",
     "https://instagram.com/zyren.ai",
     "https://facebook.com/zyren.ai",
     "https://youtube.com/@zyrenai",
@@ -243,7 +243,7 @@ const websiteSchema = {
   "@id": "https://zyren-roan.vercel.app/#website",
   url: "https://zyren-roan.vercel.app",
   name: "Zyren - AI Automation Company",
-  description: "Leading AI automation and intelligent business solutions provider",
+  description: "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
   publisher: {
     "@id": "https://zyren-roan.vercel.app/#organization",
   },
