@@ -7,7 +7,7 @@ import { Metadata } from "next"
 
 // Page-specific metadata for homepage
 export const metadata: Metadata = {
-  title: "Zyren - #1 AI Automation Company | Transform Your Business with AI",
+  title: "Zyren - AI Automation Company",
   description:
     "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Zyren - #1 AI Automation Company | Transform Your Business",
     description:
-      "Leading AI automation company helping 500+ businesses worldwide. Custom AI solutions, intelligent automation, and machine learning services.",
+      "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
     url: "https://zyren-roan.vercel.app",
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "Zyren - #1 AI Automation Company",
-    description: "Transform your business with Zyren's AI automation solutions. Trusted by 500+ companies worldwide.",
+    description: "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
     images: ["/images/og-image.png"],
   },
   alternates: {

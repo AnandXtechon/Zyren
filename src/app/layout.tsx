@@ -121,7 +121,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zyren - #1 AI Automation Company | Transform Your Business",
+    title: "Zyren - AI Automation Company",
     description:
       "AI Automation for businesses · AI-Based Website & App Development · AI-Generated Code & Debugging Assistance · AI-Powered Game Development · AI-Powered Software Testing & Automation",
     images: ["/images/zyren-twitter-card.jpg"],
@@ -182,11 +182,11 @@ const organizationSchema = {
   url: "https://zyren-roan.vercel.app",
   logo: {
     "@type": "ImageObject",
-    url: "https://zyren-roan.vercel.app/images/zyren-.png",
+    url: "https://zyren-roan.vercel.app/images/logo.png",
     width: 300,
     height: 100,
   },
-  image: "https://zyren-roan.vercel.app/images/zyren-hero-image.jpg",
+  image: "https://zyren-roan.vercel.app/images/og-image.jpg",
   foundingDate: "2024",
   founders: [
     {
