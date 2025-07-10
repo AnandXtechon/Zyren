@@ -478,7 +478,7 @@ export default function RootLayout({
         />
 
         {/* Hotjar for user experience insights */}
-        <Script
+        {/* <Script
           id="hotjar-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -493,7 +493,7 @@ export default function RootLayout({
               })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
             `,
           }}
-        />
+        /> */}
       </body>
     </html>
   )

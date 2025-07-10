@@ -162,7 +162,7 @@ const HeroSection = () => {
         </motion.h1>
 
         {/* Subheading */}
-        <motion.p variants={fadeInUp} className="text-gray-400 mt-4 max-w-xl text-lg">
+        <motion.p variants={fadeInUp} className="text-center text-gray-400 mt-4  text-lg">
           Zyren brings AI automation to your fingertips & streamlines tasks.
         </motion.p>
 

@@ -112,7 +112,7 @@ const TestimonialSection = () => {
                 scale: 1.02,
                 transition: { duration: 0.2 },
               }}
-              className="border border-zinc-900 bg-zinc-950 rounded-lg p-6 w-[500px] relative overflow-hidden hover:border-zinc-700 transition-colors duration-300"
+              className="border border-zinc-900 bg-zinc-950 rounded-lg p-6  w-[260px]  sm:w-[330px] lg:w-[500px]  relative overflow-hidden hover:border-zinc-700 transition-colors duration-300"
             >
               <motion.div
                 initial={{ opacity: 0 }}
